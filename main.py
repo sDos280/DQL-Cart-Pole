@@ -54,7 +54,7 @@ class AgentNN(torch.nn.Module):  # DQL module
         """
         :param observation: a ndarray representing the current state.
         :param action: an int.
-        :return: expected reward.
+        :return: expected return.
         """
         inin = torch.cat((observation, action), dim=1)
 
